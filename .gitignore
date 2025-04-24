@@ -22,3 +22,31 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+#########################
+# NetBeans‑specific
+#########################
+/nbbuild/                  # extra build output
+/nbdist/                   # extra dist output
+/build/
+/chat_log/
+/nbproject/private/
+/subscribers_log/
+/test/
+/lib/
+/dist/
+.nb-gradle/               # cache if a Gradle‑imported project
+
+#########################
+# Generic IDE / tooling
+#########################
+.idea/                    # IntelliJ / Android Studio
+.vscode/                  # VS Code
+.mvn/                     # Maven wrapper internal
+.gradle/                  # Local Gradle cache (if you added one)
+
+#########################
+# OS noise
+#########################
+.DS_Store
+Thumbs.db
