@@ -596,7 +596,6 @@ public class AppLayout extends javax.swing.JFrame {
         jLabel52 = new javax.swing.JLabel();
         textgroupdescription = new javax.swing.JTextField();
         btn_create_group = new javax.swing.JButton();
-        groupnameLine = new javax.swing.JLabel();
         groupdescriptionLine = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
@@ -821,12 +820,12 @@ public class AppLayout extends javax.swing.JFrame {
         underline.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         underline.setForeground(new java.awt.Color(255, 255, 255));
         underline.setText("______________________");
-        jPanel2.add(underline, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 230, -1));
+        jPanel2.add(underline, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 230, -1));
 
         underline1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         underline1.setForeground(new java.awt.Color(255, 255, 255));
         underline1.setText("______________________");
-        jPanel2.add(underline1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 230, -1));
+        jPanel2.add(underline1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 230, -1));
 
         login_panel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, 450, 440));
 
@@ -1048,8 +1047,8 @@ public class AppLayout extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(jLabel18)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         jPanel4.setBackground(new java.awt.Color(153, 204, 255));
@@ -1177,10 +1176,6 @@ public class AppLayout extends javax.swing.JFrame {
             }
         });
 
-        groupnameLine.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        groupnameLine.setForeground(new java.awt.Color(255, 255, 255));
-        groupnameLine.setText("________________________________________________");
-
         groupdescriptionLine.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         groupdescriptionLine.setForeground(new java.awt.Color(255, 255, 255));
         groupdescriptionLine.setText("________________________________________________");
@@ -1195,19 +1190,19 @@ public class AppLayout extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(groupnameLine, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel52)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel55)
                             .addComponent(textgroupname)
-                            .addComponent(jLabel52)
-                            .addComponent(btn_create_group)
                             .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addComponent(textgroupdescription, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(66, 66, 66)
+                                .addComponent(btn_create_group)
+                                .addGap(60, 60, 60)
                                 .addComponent(groupdescriptionLine, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
-                        .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(textgroupdescription, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 56, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -1215,21 +1210,23 @@ public class AppLayout extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(88, 88, 88)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel55)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(groupnameLine)
-                    .addComponent(textgroupname, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(112, 112, 112)
+                .addComponent(textgroupname, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
                 .addComponent(jLabel52)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(groupdescriptionLine)
-                    .addComponent(textgroupdescription, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addComponent(btn_create_group, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(textgroupdescription, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(148, 148, 148)
+                        .addComponent(groupdescriptionLine)
+                        .addContainerGap(78, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btn_create_group, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26))))
         );
 
         jPanel8.setBackground(new java.awt.Color(153, 204, 255));
@@ -1346,18 +1343,18 @@ public class AppLayout extends javax.swing.JFrame {
                         .addGap(110, 110, 110)
                         .addComponent(jLabel63))
                     .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
+                        .addGap(15, 15, 15)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(jLabel63)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2)
-                .addContainerGap())
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel14.setBackground(new java.awt.Color(153, 204, 255));
@@ -1393,7 +1390,7 @@ public class AppLayout extends javax.swing.JFrame {
                 logout2MouseClicked(evt);
             }
         });
-        jPanel14.add(logout2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 480, -1, -1));
+        jPanel14.add(logout2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, -1, -1));
 
         javax.swing.GroupLayout list_groups_panelLayout = new javax.swing.GroupLayout(list_groups_panel);
         list_groups_panel.setLayout(list_groups_panelLayout);
@@ -2717,7 +2714,6 @@ public class AppLayout extends javax.swing.JFrame {
     private javax.swing.JTextField edit_username;
     private javax.swing.JLabel group_create_text;
     private javax.swing.JLabel groupdescriptionLine;
-    private javax.swing.JLabel groupnameLine;
     private javax.swing.JLabel img_profile;
     private javax.swing.JLabel img_profile2;
     private javax.swing.JLabel img_profile3;
