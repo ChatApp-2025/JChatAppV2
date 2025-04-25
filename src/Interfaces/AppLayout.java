@@ -44,6 +44,8 @@ import services.Chat;
 import services.ChatService;
 
 
+
+
 public class AppLayout extends javax.swing.JFrame {
     
     int id;
@@ -104,8 +106,6 @@ public class AppLayout extends javax.swing.JFrame {
         
     }
    
-
-    
 
     
         public ImageIcon toImageIcon(byte[] img) {
