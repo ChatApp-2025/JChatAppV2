@@ -78,6 +78,14 @@ public class AppLayout extends javax.swing.JFrame {
         msg_typer.setBackground(new java.awt.Color(0,0,0,1));
 
 
+        java.net.URL iconURL = getClass().getResource("/Interfaces/icons/appicon.png");
+        if (iconURL != null) {
+            ImageIcon icon = new ImageIcon(iconURL);
+                setIconImage(icon.getImage());
+        } else {
+            System.out.println("App icon not found!");
+        }
+
         
         login_panel.setVisible(true);
         register_panel.setVisible(false);
